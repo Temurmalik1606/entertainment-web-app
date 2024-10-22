@@ -1,0 +1,39 @@
+.search-bar {
+  width: 380px;
+  height: 32px;
+  display: flex;
+  align-content: center;
+}
+
+.search-bar form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.search-bar form img {
+  width: 32px;
+}
+
+.search-bar form input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+
+  font-size: 18px;
+  color: #fff;
+  line-height: 30px;
+}
+
+@media (max-width: 740px) {
+  .search-bar form img {
+    width: 24px;
+  }
+
+  .search-bar form input {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

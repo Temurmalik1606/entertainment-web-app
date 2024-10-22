@@ -1,0 +1,94 @@
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 34px;
+}
+
+main .contents {
+  max-width: 1342px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+main .contents .title h1 {
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: capitalize;
+  letter-spacing: -0.5px;
+}
+
+main .contents .movies {
+  max-width: 2510px;
+  display: flex;
+  column-gap: 40px;
+  overflow-x: auto;
+}
+
+main .contents .recommendations {
+  max-width: 1330px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+main .contents .recommendations .elements {
+  display: flex;
+  column-gap: 40px;
+  row-gap: 32px;
+  flex-wrap: wrap;
+}
+
+main .page {
+  max-width: 1350px;
+  display: flex;
+  column-gap: 40px;
+  row-gap: 32px;
+  flex-wrap: wrap;
+  margin-top: -32px;
+}
+
+@media (max-width: 770px) {
+  main .contents .title h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  main .contents .recommendations .elements {
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 570px) {
+  main {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  main .contents .title h1 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  main .contents .movies {
+    column-gap: 16px;
+  }
+
+  main .contents .recommendations .elements {
+    column-gap: 15px;
+  }
+}
+
+@media (max-width: 376px) {
+  main .page {
+    max-width: 343px;
+    display: flex;
+    background-color: red;
+  }
+
+  main section {
+    background-color: blue;
+    max-width: 164px;
+    height: 154px;
+  }
+}

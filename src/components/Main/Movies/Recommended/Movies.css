@@ -1,0 +1,74 @@
+.card {
+  position: relative;
+}
+
+.card .img .saving-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.card .img .saving-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.card .img img {
+  width: 300px;
+  height: 174px;
+  border-radius: 8px;
+}
+
+.card .texts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+  margin-top: 8px;
+}
+
+.card .texts h3 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.card .texts .about {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.card .texts .about span {
+  font-size: 14px;
+  line-height: 18px;
+  filter: brightness(0.8);
+}
+
+@media (max-width: 740px) {
+  .card .img img {
+    width: 220px;
+    height: 140px;
+  }
+
+  .card .img .saving-icon {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card .img img {
+    width: 164px;
+    height: 110px;
+  }
+
+  .card .texts h3 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .card .texts .about span {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}

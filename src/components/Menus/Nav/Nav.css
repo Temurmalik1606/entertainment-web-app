@@ -1,0 +1,16 @@
+.nav a svg {
+  width: 20px;
+  height: 20px;
+}
+
+.nav a svg path {
+  transition: 0.3s;
+}
+
+.nav a svg path:hover {
+  fill: #fc4747;
+}
+
+.nav a svg path:active {
+  fill: #fff;
+}

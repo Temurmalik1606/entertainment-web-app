@@ -1,0 +1,93 @@
+.trends {
+  position: relative;
+  display: flex;
+}
+
+.trends .img {
+  position: relative;
+}
+
+.trends .img img {
+  width: 490px;
+  height: 260px;
+  border-radius: 8px;
+}
+
+.trends .text {
+  position: absolute;
+  bottom: 26px;
+  left: 24px;
+}
+
+.trends .saving-icon {
+  position: absolute;
+  top: 16px;
+  right: 23px;
+  cursor: pointer;
+}
+
+.trends .saving-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.trends .text h3 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.trends .text .about {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.trends .text .about span {
+  font-size: 14px;
+  line-height: 18px;
+  filter: brightness(0.8);
+}
+
+@media (max-width: 740px) {
+  .trends .img .films {
+    width: 470px;
+    height: 230px;
+  }
+
+  .trends .saving-icon {
+    top: 8px;
+    right: 8px;
+  }
+
+  .trends .text h3 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .trends .text .about span {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  .trends .img .films {
+    width: 240px;
+    height: 140px;
+  }
+
+  .trends .text h3 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .trends .text .about span {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .trends .saving-icon img {
+    width: 32px;
+    height: 32px;
+  }
+}
